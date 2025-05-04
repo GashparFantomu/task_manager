@@ -4,8 +4,12 @@ require 'db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['list_id'], $_POST['title'])) {
     $list_id = $_POST['list_id'];
     $title = $_POST['title'];
-    $description = $_POST['description'] ?? '';
-
+    if (isset($_POST['description'])) {
+        $description = $_POST['description'];
+    } else {
+        $description = '';
+    }
+    
     $stmt = $conn->prepare("INSERT INTO tasks (list_id, title, description) VALUES (?, ?, ?)");
     $stmt->bind_param("iss", $list_id, $title, $description);
     $stmt->execute();
