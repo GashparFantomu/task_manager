@@ -1,3 +1,42 @@
+<?php
+session_start(); // Începe sesiunea
+require 'db.php'; // Include conexiunea la baza de date
+
+// Verifică dacă formularul a fost trimis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+    // Verifică dacă utilizatorul există în baza de date
+    $stmt = $conn->prepare("SELECT id, password FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->store_result();
+
+    if ($stmt->num_rows > 0) {
+        // Legătura rezultatelor
+        $stmt->bind_result($user_id, $hashed_password);
+        $stmt->fetch();
+
+        // Verifică parola
+        if (password_verify($password, $hashed_password)) {
+            // Parola este corectă, setează sesiunea utilizatorului
+            session_start();
+            $_SESSION['user_id'] = $user_id;
+            header("Location: dashboard.php");
+            exit;
+        } else {
+            // Parola este greșită
+            echo "Username sau parolă greșită!";
+        }
+    } else {
+        // Utilizatorul nu există
+        echo "Username sau parolă greșită!";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,8 +78,9 @@
       </div>
       <button type="submit" class="btn btn-primary w-100">Login</button>
     </form>
-    <p class="mt-3 text-center">Nu ai cont? <a href="login.php">Înregistrează-te</a></p>
+    <p class="mt-3 text-center">Nu ai cont? <a href="register.php">Înregistrează-te</a></p>
   </div>
   
 </body>
 </html>
+

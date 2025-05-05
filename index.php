@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>TaskFlow</title>
 </head>
@@ -43,10 +43,31 @@
   <div class="container">
     <h1 class="display-4 fw-bold">Bine ai venit la TaskFlow</h1>
     <p class="lead mb-4">Platforma ta pentru organizarea taskurilor rapid și eficient. Simplu, rapid, modern.</p>
-    <a href="register.php" class="btn btn-primary btn-lg">Începe acum</a>
+    <a href="dashboard.php" class="btn btn-primary btn-lg">Începe acum</a>
   </div>
 </section>
 
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/test1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/test2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/test3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <section class="py-5 bg-light">
   <div class="container">
@@ -98,7 +119,7 @@
           <li><a href="about.php" class="text-white text-decoration-none">Despre</a></li>
           <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
           <li><a href="https://github.com/GashparFantomu" target="_blank" class="text-white text-decoration-none">GitHub</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Politica de confidențialitate</a></li>
+          <li><a href="https://www.linkedin.com/pulse/significance-reviewing-terms-conditions-privacy-policies-elfegih-cfvif" class="text-white text-decoration-none">Politica de confidențialitate</a></li>
         </ul>
       </div>
 
@@ -113,12 +134,12 @@
 
       <!-- Col 4 -->
       <div class="col-md-3 mb-3 text-md-end text-center">
-        <p class="mb-0">&copy; 2025 TaskFlow. Toate drepturile rezervate.</p>
+        <p class="mb-0"> C incercuit 2025. Toate drepturile rezervate.</p>
       </div>
     </div>
   </div>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

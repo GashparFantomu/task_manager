@@ -55,3 +55,16 @@ footer{
     bottom: 0;
     color: white;
 }
+/* Limitează înălțimea carousel-ului */
+.carousel-item {
+    max-height: 100px;        /* ajustează după cum vrei */
+    overflow: hidden;
+  }
+  
+  /* Asigură-te că imaginile umplu lățimea și sunt decupate proporțional */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
