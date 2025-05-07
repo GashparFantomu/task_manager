@@ -55,7 +55,7 @@ $stmt->close();
 
 <nav class="navbar navbar-dark bg-dark mb-4">
     <div class="container-fluid">
-        <span class="navbar-brand">Dashboard - <?= htmlspecialchars($board['name']) ?></span>
+        <span class="navbar-brand">Dashboard - <?= htmlspecialchars($board['board_name']) ?></span>
         <a href="logout.php" class="btn btn-outline-light">Logout</a>
     </div>
 </nav>

@@ -4,7 +4,7 @@ $username = "root";
 $password = ""; // implicit în XAMPP
 $database = "taskflow_db";
 
-// Creăm conexiunea
+
 $conn = new mysqli($servername, $username, $password, $database);
 
 // Verificăm conexiunea
