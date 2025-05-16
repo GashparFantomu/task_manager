@@ -56,9 +56,9 @@
             new Sortable(list, {
                 group: 'shared',
                 animation: 150,
-                onEnd: function (evt) {
-                    console.log(`Moved task from ${evt.from} to ${evt.to}`);
-                }
+                // onEnd: function (evt) {
+                //     console.log(`Moved task from ${evt.from} to ${evt.to}`);
+                // }
             });
         });
     });
