@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = ""; // implicit în XAMPP
-$database = "taskflow_db";
+$database = "todo";
 
 
 $conn = new mysqli($servername, $username, $password, $database);
