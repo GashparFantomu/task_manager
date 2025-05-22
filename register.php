@@ -5,10 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
     
-    // Criptarea parolei
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Inserarea utilizatorului în baza de date
     $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
     $stmt->bind_param("ss", $username, $hashed_password);
     $stmt->execute();
