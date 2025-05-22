@@ -2,14 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const lists = document.querySelectorAll('.list');
     lists.forEach(list => {
         new Sortable(list, {
-            group: 'shared',
+            group: 'shared', // allows drag between lists
             animation: 150,
-            filter: 'h3, .add-card',
-        });
-
-        // Add delete buttons to all existing tasks
-        list.querySelectorAll('.task').forEach(task => {
-            ensureDeleteButton(task);
+            filter: 'h3, .add-card', // don't drag titles or add buttons
         });
 
         // Add card functionality
@@ -21,25 +16,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     const newTask = document.createElement('div');
                     newTask.className = 'task';
                     newTask.append(document.createTextNode(cardText));
-                    ensureDeleteButton(newTask);
+                    // Add delete button
+                    const delBtn = document.createElement('button');
+                    delBtn.className = 'delete-card btn btn-sm btn-danger ms-2';
+                    delBtn.textContent = '×';
+                    delBtn.style.float = 'right';
+                    delBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        newTask.remove();
+                    });
+                    newTask.appendChild(delBtn);
                     list.insertBefore(newTask, addBtn);
                 }
             });
         }
+        // Add delete button to existing tasks
+        list.querySelectorAll('.task').forEach(task => {
+            if (!task.querySelector('.delete-card')) {
+                const delBtn = document.createElement('button');
+                delBtn.className = 'delete-card btn btn-sm btn-danger ms-2';
+                delBtn.textContent = '×';
+                delBtn.style.float = 'right';
+                delBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    task.remove();
+                });
+                task.appendChild(delBtn);
+            }
+        });
     });
-
-    // Helper to add a delete button if not present
-    function ensureDeleteButton(task) {
-        if (!task.querySelector('.delete-card')) {
-            const btn = document.createElement('button');
-            btn.className = 'delete-card btn btn-sm btn-danger ms-2';
-            btn.textContent = '×';
-            btn.style.float = 'right';
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                task.remove();
-            });
-            task.appendChild(btn);
-        }
-    }
 });
