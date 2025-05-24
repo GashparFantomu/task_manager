@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      background-image: url("assets/images/login_bg.jpg");
+      background-image: url("assets/images/loginBG.jpg");
       background-size: cover;
       background-position: center;
       height: 100vh;

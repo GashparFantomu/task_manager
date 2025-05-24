@@ -113,7 +113,8 @@
 
       <!-- Col 4 -->
       <div class="col-md-3 mb-3 text-md-end text-center">
-        <p class="mb-0"> C incercuit 2025. Toate drepturile rezervate.</p>
+        <p class="mb-0"> C incercuit 2025. Toate drepturile rezervate.</p><br>
+        <p><a href="https://www.youtube.com/watch?v=Cbkl2w11iS0&list=LL&index=108">.</a></p> <!easteregg>
       </div>
     </div>
   </div>
