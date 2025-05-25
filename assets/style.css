@@ -4,10 +4,10 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0; 
-    background-image: url("../assets/images/loginBG.jpg"); /* Adjusted path to the image */
+    background-image: url("../assets/images/loginBG.jpg"); 
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-repeat: no-repeat; 
 }
 
 form {

@@ -43,3 +43,34 @@ body {
     padding: 10px;
     
 }
+
+.add-card{
+    background: #dfdfdf;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.add-card:hover {
+    background: #39d1ff;
+}
+
+.delete-card{
+    background: #ce5757;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+.task{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    
+}
+.task:hover {
+    background: #ffec42;
+    
+}
+
