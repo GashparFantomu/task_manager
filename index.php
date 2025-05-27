@@ -43,7 +43,7 @@
   <div class="container">
     <h1 class="display-4 fw-bold">Bine ai venit la TaskFlow</h1>
     <p class="lead mb-4">Platforma ta pentru organizarea taskurilor rapid și eficient. Simplu, rapid, modern.</p>
-    <a href="dashboard.php" class="btn btn-primary btn-lg">Începe acum</a>
+    <a href="dashboard.php" class="btn btn-primary btn-lg">Incepe acum</a>
   </div>
 </section>
 
@@ -114,7 +114,7 @@
       <!-- Col 4 -->
       <div class="col-md-3 mb-3 text-md-end text-center">
         <p class="mb-0"> C incercuit 2025. Toate drepturile rezervate.</p><br>
-        <p><a href="https://www.youtube.com/watch?v=Cbkl2w11iS0&list=LL&index=108">.</a></p> <!easteregg>
+        <p><a href="https://www.youtube.com/watch?v=Cbkl2w11iS0&list=LL&index=108">.</a></p> <!easterEgg>
       </div>
     </div>
   </div>
