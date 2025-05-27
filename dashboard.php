@@ -31,7 +31,7 @@
         </div>
     </nav>
     <div class="container mt-5">
-        <h1>Your stupid Kanban Board</h1>
+        <h1>Your Kanban Board</h1>
         <div class="board">
             <div class="list">
                 <h3>To Do</h3>

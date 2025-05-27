@@ -8,16 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     const addBtn = document.querySelectorAll('.add-card');
-    addBtn.forEach(task =>{
-        task.addEventListener('click', ()=>{
+    addBtn.forEach(button =>{
+        button.addEventListener('click', ()=>{
             const taskName = prompt("baga ceva");
             const newTask = document.createElement('div');
             newTask.classList.add('task')
             const textNode = document.createTextNode(taskName);
-            newTask.appendChild(textNode);
-            const list = task.parentElement;
+            newTask.append(textNode);
+            const list = button.parentElement;
             
-            //toata porcatia asta pentru a adauga un card...
+            //toata porcaria asta pentru a adauga un card...333333333333333333333333333333333333333333333333333we                        
             
             const delBtn = document.createElement('button');
             delBtn.classList.add('delete-card');
