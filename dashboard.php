@@ -43,18 +43,26 @@ if(!isset($_SESSION['user_id'])) {
         <div class="board">
             <div class="list">
                 <h3>To Do</h3>
-                <div class="task">Task 1</div>
-                <div class="task">Task 2</div>
+                <div class="list-tasks">
+                    <div class="task">Task 1</div>
+                    <div class="task">Task 2</div>
+
+                </div>
                 <button class="add-card">Add Card</button>
             </div>
-            <div class="list">
-                <h3>In Progress</h3>
-                <div class="task">Task 3</div>
+                <div class="list">
+                    <h3>In progress</h3>
+                    <div class="list-tasks">
+                        <div class="task">Task 1</div>
+                        <div class="task">Task 2</div>
+                    </div>
                 <button class="add-card">Add Card</button>
             </div>
-            <div class="list">
-                <h3>Done</h3>
-                <div class="task">Task 4</div>
+                    <div class="list">
+                    <h3>Done</h3>
+                    <div class="list-tasks">
+
+                    </div>
                 <button class="add-card">Add Card</button>
             </div>
         </div>
