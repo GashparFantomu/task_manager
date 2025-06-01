@@ -28,7 +28,7 @@ body {
     width: 300px;
     padding: 10px;
 }
-.task {            
+.tasks {            
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -41,7 +41,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    transition: 0.3s ease;
+
 }
 
 
@@ -57,14 +57,14 @@ body {
 
 }
 
-.task{
+.tasks{
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    transition: 0.3s ease;
+
     
 }
-.task:hover {
+.tasks:hover {
     background: #ffec42;
     
 }

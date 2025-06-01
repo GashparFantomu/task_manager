@@ -1,8 +1,20 @@
 <?php
+require 'db.php';
 session_start();
 if(!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
+}
+
+$tasks = [
+    'To Do' => [],
+    'In progress' => [],
+    'Done' => []
+];
+$sql1 = "SELECT id, task, status FROM tasks";
+$result1 = $conn->query($sql1);
+while ($row1 = $result1->fetch_assoc()) {
+    $tasks[$row1['status']][] = $row1;
 }
 ?>
 
@@ -44,24 +56,31 @@ if(!isset($_SESSION['user_id'])) {
             <div class="list">
                 <h3>To Do</h3>
                 <div class="list-tasks">
-                    <div class="task">Task 1</div>
-                    <div class="task">Task 2</div>
-
+                    <?php foreach($tasks['To Do'] as $task): ?>
+                        <div class="tasks" data-id="<?= $task['id'] ?>">
+                            <?= htmlspecialchars($task['task']) ?>
+                            <button class="delete-card btn btn-danger btn-sm" style="float:right;">×</button>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
                 <button class="add-card">Add Card</button>
+                
             </div>
                 <div class="list">
                     <h3>In progress</h3>
                     <div class="list-tasks">
-                        <div class="task">Task 1</div>
-                        <div class="task">Task 2</div>
+                        <?php foreach($tasks['In progress'] as $task): ?>
+                            <div class= "tasks"><?= htmlspecialchars($task['task']) ?></div>    
+                        <?php endforeach; ?>
                     </div>
                 <button class="add-card">Add Card</button>
             </div>
-                    <div class="list">
+                <div class="list">
                     <h3>Done</h3>
                     <div class="list-tasks">
-
+                        <?php foreach($tasks['Done'] as $task): ?>
+                            <div class= "tasks"><?= htmlspecialchars($task['task']) ?></div>
+                        <?php endforeach; ?>
                     </div>
                 <button class="add-card">Add Card</button>
             </div>
