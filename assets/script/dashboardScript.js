@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.addEventListener('click', function(e) {
         if (e.target.classList.contains('delete-card')) {
-            const taskDiv = e.target.closest('.tasks');
+            const taskDiv = e.target.closest('.task');
             const taskId = taskDiv.getAttribute('data-id');
             if (confirm('Are you sure you want to delete this card?')) {
                 fetch('delete_card.php', {

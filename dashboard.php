@@ -57,20 +57,23 @@ while ($row1 = $result1->fetch_assoc()) {
                 <h3>To Do</h3>
                 <div class="list-tasks">
                     <?php foreach($tasks['To Do'] as $task): ?>
-                        <div class="tasks" data-id="<?= $task['id'] ?>">
+                        <div class="task" data-id="<?= $task['id'] ?>">
                             <?= htmlspecialchars($task['task']) ?>
                             <button class="delete-card btn btn-danger btn-sm" style="float:right;">×</button>
                         </div>
                     <?php endforeach; ?>
                 </div>
                 <button class="add-card">Add Card</button>
-                
+
             </div>
                 <div class="list">
                     <h3>In progress</h3>
                     <div class="list-tasks">
                         <?php foreach($tasks['In progress'] as $task): ?>
-                            <div class= "tasks"><?= htmlspecialchars($task['task']) ?></div>    
+                            <div class= "task" data-id="<?= $task['id'] ?>">
+                                <?= htmlspecialchars($task['task']) ?>
+                                <button class="delete-card btn btn-danger btn-sm" style="float:right;">×</button>
+                            </div>    
                         <?php endforeach; ?>
                     </div>
                 <button class="add-card">Add Card</button>
@@ -79,7 +82,10 @@ while ($row1 = $result1->fetch_assoc()) {
                     <h3>Done</h3>
                     <div class="list-tasks">
                         <?php foreach($tasks['Done'] as $task): ?>
-                            <div class= "tasks"><?= htmlspecialchars($task['task']) ?></div>
+                            <div class= "task" data-id="<?= $task['id'] ?>">
+                                <?= htmlspecialchars($task['task']) ?>
+                                <button class="delete-card btn btn-danger btn-sm" style="float:right;">×</button>
+                            </div>
                         <?php endforeach; ?>
                     </div>
                 <button class="add-card">Add Card</button>
