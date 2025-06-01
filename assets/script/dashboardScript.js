@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filter: 'h3, .add-card',
         });
     });
+
     const addBtn = document.querySelectorAll('.add-card');
     addBtn.forEach(button =>{
         button.addEventListener('click', ()=>{
@@ -16,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const textNode = document.createTextNode(taskName);
             newTask.append(textNode);
             const list = button.parentElement;
-            
-            //toata porcaria asta pentru a adauga un card...333333333333333333333333333333333333333333333333333we                        
+                           
             
             const delBtn = document.createElement('button');
             delBtn.classList.add('delete-card');
