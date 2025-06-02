@@ -57,7 +57,7 @@ footer{
 }
 
 .carousel-item {
-    max-height: 100px;        
+    max-height: 150px;        
     overflow: hidden;
     display: flex;
     justify-content: center;

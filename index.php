@@ -137,10 +137,10 @@
       <div class="col-md-3 mb-3">
         <h6>Linkuri utile</h6>
         <ul class="list-unstyled">
-          <li><a href="about.php" class="text-white text-decoration-none">Despre</a></li>
-          <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="https://scanstart.ro/" class="text-white text-decoration-none">scanstart.ro</a></li>
+          <li><a href="http://csac.ulbsibiu.ro/" class="text-white text-decoration-none">csac.ro</a></li>
           <li><a href="https://github.com/GashparFantomu" target="_blank" class="text-white text-decoration-none">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/pulse/significance-reviewing-terms-conditions-privacy-policies-elfegih-cfvif" class="text-white text-decoration-none">Politica de confidențialitate</a></li>
+          <li><a href="https://www.instagram.com/cie.engineering_ulbs/?hl=en" class="text-white text-decoration-none">instagram ULBS</a></li>
         </ul>
       </div>
 
