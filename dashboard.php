@@ -41,7 +41,7 @@ while ($row1 = $result1->fetch_assoc()) {
                         <a class="nav-link active" href="dashboard.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
+                        <a class="nav-link" href="logout.php">logout</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
@@ -93,7 +93,6 @@ while ($row1 = $result1->fetch_assoc()) {
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="assets/script/dashboardScript.js"></script>
 </body>
 </html>

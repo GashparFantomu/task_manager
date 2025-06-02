@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
+      <style>
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
     <title>TaskFlow</title>
 </head>
 <body>
@@ -30,9 +35,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.php">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
     </div>
@@ -80,6 +82,46 @@
   </div>
 </section>
 
+<!-- Carousel START -->
+<div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/test1.jpg" class="d-block w-100" alt="Imagine 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Organizează-ți taskurile</h5>
+        <p>Totul la un loc, ușor de folosit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/test2.jpg" class="d-block w-100" alt="Imagine 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Colaborează cu echipa</h5>
+        <p>Lucrează împreună, eficient și rapid.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/test3.jpg" class="d-block w-100" alt="Imagine 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Monitorizează progresul</h5>
+        <p>Vezi ce ai realizat și ce urmează.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel END -->
 
 
 <footer class="bg-dark text-white mt-5 py-4">
@@ -114,7 +156,7 @@
       <!-- Col 4 -->
       <div class="col-md-3 mb-3 text-md-end text-center">
         <p class="mb-0"> C incercuit 2025. Toate drepturile rezervate.</p><br>
-        <p><a href="https://www.youtube.com/watch?v=Cbkl2w11iS0&list=LL&index=108">.</a></p> <!easterEgg>
+        <p><a href="https://www.youtube.com/watch?v=x_QmvZRS85U">.</a></p> <!easterEgg>
       </div>
     </div>
   </div>

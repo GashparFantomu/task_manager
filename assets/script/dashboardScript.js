@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains('delete-card')) {
             const taskDiv = e.target.closest('.task');
             const taskId = taskDiv.getAttribute('data-id');
-            if (confirm('Are you sure you want to delete this card?')) {
+            if (confirm('Esti sigur?')) {
                 fetch('delete_card.php', {
                     method: 'POST',
                     headers: {
